@@ -53,7 +53,7 @@ The price of BAT, REP, ZRX, and WBTC are a median of prices from Coinbase Pro, B
 Compound is developing an advanced price feed, the Open Oracle System, to create a transparent, decentralized, resilient, and tamper-proof price feed.
 
 ### Source
-- https://medium.com/compound-finance/faq-1a2636713b69z
+- https://medium.com/compound-finance/faq-1a2636713b69
 - https://medium.com/compound-finance/announcing-compound-open-oracle-development-cff36f06aad3
 
 ## DDEX
