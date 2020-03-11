@@ -8,7 +8,7 @@ project you agree to abide by its terms.
 
 Ensure your pull request adheres to the following guidelines:
 
-- The DeFi project must be included in [DeFi Pulse](https://defipulse.com/) or [DeFi Watch](https://defiwatch.net/). This helps to maintain a curated list of DeFi projects.
+- The DeFi project must already be included in [DeFi Pulse](https://defipulse.com/) or [DeFi Watch](https://defiwatch.net/). This helps maintain a curated list of DeFi projects.
 
 Thank you for your suggestions!
 
