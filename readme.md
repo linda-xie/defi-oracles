@@ -11,10 +11,10 @@
 - [DDEX](#DDEX)
 - [dYdX](#dYdX)
 - [MakerDAO](#MakerDAO)
-- [Nexus-Mutual](#Nexus-Mutual)
-- [Nuo](#NuoO)
+- [Nexus Mutual](#Nexus-Mutual)
+- [Nuo](#Nuo)
 - [Synthetix](#Synthetix)
-- [Token-Sets](#Token-Sets)
+- [Token Sets](#Token-Sets)
 
 
 ## Aave
@@ -105,7 +105,7 @@ v2 introduces several new proposals:
 - https://developer.makerdao.com/feeds/
 - https://blog.makerdao.com/introducing-oracles-v2-and-defi-feeds/
 
-## Nexus-Mutual
+## Nexus Mutual
 ### Oracle Method
 Members will act as judges, with each claim subject to a yes/no vote by members who have chosen to stake a portion of their tokens to act as Claims Assessors.
 The Claims Assessors earn rewards for voting with the consensus outcome. If anyone is deemed to have voted fraudulently, their stake may be burned via the Governance process.
@@ -153,7 +153,7 @@ Other price feeds are determined by an oracle that pushes price feeds on-chain u
 - https://blog.synthetix.io/chainlink-decentralizes-first-wave-of-synthetix-price-feeds/
 - https://www.synthetix.io/uploads/synthetix_litepaper.pdf
 
-## Token-Sets
+## Token Sets
 ### Oracle Method
 On-chain prices used by their smart contracts are sourced from MakerDAO's oracles (BTC and ETH), and prices for buying and selling are sourced from DEXs that provide liquidity to Set Protocol. They use Chainlink's LINK/USD oracle to power the LINK sets and also have their own on-chain moving average and RSI oracles.
 
