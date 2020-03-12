@@ -39,12 +39,10 @@ With each successive dispute round, a higher Dispute Bond is needed to shift the
 
 ## bZx
 ### Oracle Method
-The current bZx oracle solution for 60+ tokens is supported by the KyberNetwork.
-
-bZx will incorporate Chainlink’s functionality to build a separate oracle solution on top of the base bZx protocol.
+Chainlink’s decentralized oracle network is used for price information.
 
 ### Source
-- https://medium.com/bzxnetwork/bzx-teams-up-with-chainlink-5b9649e8c241
+- https://bzx.network/blog/chainlink-oracles 
 
 ## Compound
 ### Oracle Method
