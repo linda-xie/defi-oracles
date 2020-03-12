@@ -20,7 +20,9 @@
 ## Aave
 ### Oracle Method
 Aave uses separate Chainlink Price Reference Data contracts for each of the 15 price oracles needed to secure the accurate issuance and liquidation of cryptocurrency-backed loans. These data feeds are for assets priced against ETH and include LEND, LINK, BTC, MKR, MANA, KNC, USDC, REP, ZRX, BAT, DAI, TUSD, USDT, SUSD, and SNX.
+
 Chainlink’s Price Reference Data Contracts are decentralized oracle networks made up of at least 7 independent, security reviewed, and Sybil resistant node operators. They derive from a growing pool of 30 independent node operators run by leading blockchain DevOps and security teams, many of which have extensive experience running POS nodes across multiple blockchain networks.
+
 On-chain prices are calculated by having each independent node retrieve data from one of the numerous different market data aggregators, with every network containing at least seven independent data aggregator APIs. The nodes’ individual responses are then aggregated together on-chain into a collective response that becomes a new on-chain price update to the Price Reference Data Contract. Updates occur every 1% deviation in price (2% for less used assets), with a minimum time-based update every hour if the deviation threshold is not reached.
 
 ### Source
@@ -43,7 +45,9 @@ With each successive dispute round, a higher Dispute Bond is needed to shift the
 ## bZx
 ### Oracle Method
 bZx uses separate Chainlink Price Reference Data contracts for each of the 6 price oracles (BTC/ETH, KNC/ETH, LINK/ETH, ZRX/ETH, DAI/ETH, and SUSD/ETH) needed to secure the accurate issuance and liquidation of loans for margin trading. 
+
 Chainlink’s Price Reference Data Contracts are decentralized oracle networks made up of at least 7 independent, security reviewed, and Sybil resistant node operators. They derive from a growing pool of 30 independent node operators run by leading blockchain DevOps and security teams, many of which have extensive experience running POS nodes across multiple blockchain networks.
+
 On-chain prices are calculated by having each independent node retrieve data from one of the numerous different market data aggregators, with every network containing at least seven independent data aggregator APIs. The nodes’ individual responses are then aggregated together on-chain into a collective response that becomes a new on-chain price update to the Price Reference Data Contract. Updates occur every 1% deviation in price (2% for KNC/ETH and BTC/ETH), with a minimum time-based update every hour if the deviation threshold is not reached.
 
 ### Source
