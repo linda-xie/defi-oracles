@@ -60,9 +60,13 @@ The price of BAT, REP, ZRX, and WBTC are a median of prices from Coinbase Pro, B
 
 Compound is developing an advanced price feed, the Open Oracle System, to create a transparent, decentralized, resilient, and tamper-proof price feed.
 
+### Contract Addresses
+- PriceOracle: [0x1d8aedc9e924730dd3f9641cdb4d1b92b848b4bd](https://etherscan.io/address/0x1d8aedc9e924730dd3f9641cdb4d1b92b848b4bd)
+
 ### Source
 - https://medium.com/compound-finance/faq-1a2636713b69
 - https://medium.com/compound-finance/announcing-compound-open-oracle-development-cff36f06aad3
+- https://compound.finance/developers
 
 ## DDEX
 ### Oracle Method
@@ -88,16 +92,14 @@ Up-to-date contract addresses for the Oracles that dYdX uses can be obtained by 
 
 Currently the addresses are:
 
-WETH Oracle (Market ID 0): 0xf61AE328463CD997C7b58e7045CdC613e1cFdb69
-
-SAI Oracle (Market ID 1): 0x91d8825e0294d6628f8C93ac8ddA88773618608a
-
-USDC Oracle (Market ID 2): 0x52f1c952A48a4588f9ae615d38cfdbf8dF036e60
-
-DAI Oracle (Market ID 3): 0x0fBd14718d8FAB8f9f40Ee5c5612b1F0717100A2
+- WETH Oracle (Market ID 0): [0xf61AE328463CD997C7b58e7045CdC613e1cFdb69](https://etherscan.io/address/0xf61AE328463CD997C7b58e7045CdC613e1cFdb69)
+- SAI Oracle (Market ID 1): [0x91d8825e0294d6628f8C93ac8ddA88773618608a](https://etherscan.io/address/0x91d8825e0294d6628f8c93ac8dda88773618608a)
+- USDC Oracle (Market ID 2): [0x52f1c952A48a4588f9ae615d38cfdbf8dF036e60](https://etherscan.io/address/0x52f1c952A48a4588f9ae615d38cfdbf8dF036e60)
+- DAI Oracle (Market ID 3): [0x0fBd14718d8FAB8f9f40Ee5c5612b1F0717100A2](https://etherscan.io/address/0x0fbd14718d8fab8f9f40ee5c5612b1f0717100a2)
 
 ### Source
 - https://help.dydx.exchange/en/articles/2953486-where-does-price-information-come-from
+- https://docs.dydx.exchange/#/contracts
 
 ## MakerDAO
 ### Oracle Method
@@ -123,6 +125,11 @@ v2 introduces several new proposals:
 2. An Oracle Team Mandate to create an Oracle Team role. The mandate will empower MKR Governance to appoint Oracle Team(s) to perform certain tasks on their behalf.
 3. MKR Governors’ control of the Oracles infrastructure be formalized via an Oracle Governance Framework.
 4. New incentive structure for Oracles.
+
+### Contract Addresses
+- Maker: [0x99041F808D598B782D5a3e498681C2452A31da08](https://etherscan.io/address/0x99041F808D598B782D5a3e498681C2452A31da08)
+- Ethereum: [0x81FE72B5A8d1A857d176C3E7d5Bd2679A9B85763](https://etherscan.io/address/0x81FE72B5A8d1A857d176C3E7d5Bd2679A9B85763)
+- Basic Attention Token: [0xB4eb54AF9Cc7882DF0121d26c5b97E802915ABe6](https://etherscan.io/address/0xB4eb54AF9Cc7882DF0121d26c5b97E802915ABe6)
 
 ### Source
 - https://developer.makerdao.com/feeds/
