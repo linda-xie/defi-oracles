@@ -27,7 +27,7 @@ On-chain prices are calculated by having each independent node retrieve data fro
 
 ### Source
 - https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e
-- https://feeds.chain.link/ 
+- https://feeds.chain.link/
 
 ## Augur
 ### Oracle Method
@@ -44,14 +44,14 @@ With each successive dispute round, a higher Dispute Bond is needed to shift the
 
 ## bZx
 ### Oracle Method
-bZx uses separate Chainlink Price Reference Data contracts for each of the 6 price oracles (BTC/ETH, KNC/ETH, LINK/ETH, ZRX/ETH, DAI/ETH, and SUSD/ETH) needed to secure the accurate issuance and liquidation of loans for margin trading. 
+bZx uses separate Chainlink Price Reference Data contracts for each of the 6 price oracles (BTC/ETH, KNC/ETH, LINK/ETH, ZRX/ETH, DAI/ETH, and SUSD/ETH) needed to secure the accurate issuance and liquidation of loans for margin trading.
 
 Chainlink’s Price Reference Data Contracts are decentralized oracle networks made up of at least 7 independent, security reviewed, and Sybil resistant node operators. They derive from a growing pool of 30 independent node operators run by leading blockchain DevOps and security teams, many of which have extensive experience running POS nodes across multiple blockchain networks.
 
 On-chain prices are calculated by having each independent node retrieve data from one of the numerous different market data aggregators, with every network containing at least seven independent data aggregator APIs. The nodes’ individual responses are then aggregated together on-chain into a collective response that becomes a new on-chain price update to the Price Reference Data Contract. Updates occur every 1% deviation in price (2% for KNC/ETH and BTC/ETH), with a minimum time-based update every hour if the deviation threshold is not reached.
 
 ### Source
-- https://bzx.network/blog/chainlink-oracles 
+- https://bzx.network/blog/chainlink-oracles
 - https://feeds.chain.link/
 
 ## Compound
@@ -77,9 +77,24 @@ Prices are fed to the dYdX smart contracts through price oracles that run on Eth
 
 For ETH, dYdX uses the MakerDAO ETH-USD V1 Oracle that is used by MakerDAO for their stablecoin SAI, and relies on a distributed network of reporters that report the price of ETH in USD.
 
+For SAI, dYdX uses a price of $1. SAI can no longer be borrowed and is basically worth 0 as collateral. We only include this oracle method for completeness.
+
 For DAI, dYdX uses our own price oracle which calculates the USD price of DAI using a combination of Oasis Trade's on-chain orderbook, Uniswap, and the MakerDAO ETH-USD oracle. The oracle also has several protections against price manipulation on eth2dai and Uniswap.
 
 For USDC, dYdX uses a price of $1 as USDC is exchangeable 1:1 with USD on Coinbase.
+
+### Contract Addresses
+Up-to-date contract addresses for the Oracles that dYdX uses can be obtained by calling the `getMarketPriceOracle` function on [dYdX's Solo Margin contract](https://etherscan.io/address/0x1e0447b19bb6ecfdae1e4ae1694b0c3659614e4e).
+
+Currently the addresses are:
+
+WETH Oracle (Market ID 0): 0xf61AE328463CD997C7b58e7045CdC613e1cFdb69
+
+SAI Oracle (Market ID 1): 0x91d8825e0294d6628f8C93ac8ddA88773618608a
+
+USDC Oracle (Market ID 2): 0x52f1c952A48a4588f9ae615d38cfdbf8dF036e60
+
+DAI Oracle (Market ID 3): 0x0fBd14718d8FAB8f9f40Ee5c5612b1F0717100A2
 
 ### Source
 - https://help.dydx.exchange/en/articles/2953486-where-does-price-information-come-from
@@ -105,8 +120,8 @@ The adding and removal of whitelisted price feed addresses is controlled via gov
 
 v2 introduces several new proposals:
 1. Add a set of DeFi partners as Feeds
-2. An Oracle Team Mandate to create an Oracle Team role. The mandate will empower MKR Governance to appoint Oracle Team(s) to perform certain tasks on their behalf. 
-3. MKR Governors’ control of the Oracles infrastructure be formalized via an Oracle Governance Framework. 
+2. An Oracle Team Mandate to create an Oracle Team role. The mandate will empower MKR Governance to appoint Oracle Team(s) to perform certain tasks on their behalf.
+3. MKR Governors’ control of the Oracles infrastructure be formalized via an Oracle Governance Framework.
 4. New incentive structure for Oracles.
 
 ### Source
@@ -153,7 +168,7 @@ There are plans to potentially integrate Chainlink in a future version.
 
 ## Synthetix
 ### Oracle Method
-Chainlink for FX and commodity price feeds with plan to integrate cryptocurrencies and indices in the future. 
+Chainlink for FX and commodity price feeds with plan to integrate cryptocurrencies and indices in the future.
 
 Other price feeds are determined by an oracle that pushes price feeds on-chain using an algorithm with a variety of sources to form an aggregate value for each asset. It is currently operated by the Synthetix team https://etherscan.io/address/0x565C9EB432f4AE9633e50e1213AB4f23D8f31f54
 
