@@ -70,10 +70,19 @@ Compound is developing an advanced price feed, the Open Oracle System, to create
 
 ## DDEX
 ### Oracle Method
-Uses on-chain price oracles to determine real-time USD prices. These price oracles are different for each market (example: the ETH-DAI market will use the MakerDAO ETH-USD price oracle), chosen based on stability. They have several safety mechanisms built into the price determination process to guard against oracle failures: both on a contract level and algorithmically
+Uses on-chain price oracles to determine real-time USD prices. These price oracles are different for each market (example: the ETH-DAI market will use the MakerDAO ETH-USD price oracle), chosen based on stability. They have several safety mechanisms built into the price determination process to guard against oracle failures: both on a contract level and algorithmically.
+
+USDC references Coinbase prices, with safety checks, outlier detection, and expiration time built into their onchain proxy.
+
+There are sanity bounds placed on the price of DAI, currently set to 0.95 and 1.05
+
+### Contract Addresses
+- DAI: [0xe6f148448b61339a59eF6aB9ab7378E9200FA745](https://etherscan.io/address/0xe6f148448b61339a59ef6ab9ab7378e9200fa745)
 
 ### Source
 - https://medium.com/hydro-protocol/ddex-faq-margin-trading-bd4b32beb9f
+- https://medium.com/ddex/reflecting-on-ddex-in-the-age-of-flash-loans-ee55410e0974
+- https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit/
 
 ## dYdX
 ### Oracle Method
@@ -177,17 +186,35 @@ There are plans to potentially integrate Chainlink in a future version.
 ### Oracle Method
 Chainlink for FX and commodity price feeds with plan to integrate cryptocurrencies and indices in the future.
 
-Other price feeds are determined by an oracle that pushes price feeds on-chain using an algorithm with a variety of sources to form an aggregate value for each asset. It is currently operated by the Synthetix team https://etherscan.io/address/0x565C9EB432f4AE9633e50e1213AB4f23D8f31f54
+Other price feeds are determined by an oracle that pushes price feeds on-chain using an algorithm with a variety of sources to form an aggregate value for each asset.
+
+The ExchangeRates contract (https://contracts.synthetix.io/ExchangeRates) will continue to be fed prices from the decentralized oracle. However, the logic for looking up prices will be extended with a mapping of Chainlink Aggregator contracts for each Synth.
+
+### Contract Addresses
+- ExchangeRates: [0x9D7F70AF5DF5D5CC79780032d47a34615D1F1d77](https://etherscan.io/address/0x9D7F70AF5DF5D5CC79780032d47a34615D1F1d77)
 
 ### Source
 - https://blog.synthetix.io/chainlink-decentralizes-first-wave-of-synthetix-price-feeds/
 - https://www.synthetix.io/uploads/synthetix_litepaper.pdf
+- https://sips.synthetix.io/sips/sip-36
+- https://sips.synthetix.io/sips/sip-32
 
 ## Token Sets
 ### Oracle Method
 On-chain prices used by their smart contracts are sourced from MakerDAO's oracles (BTC and ETH), and prices for buying and selling are sourced from DEXs that provide liquidity to Set Protocol. They use Chainlink's LINK/USD oracle to power the LINK sets and also have their own on-chain moving average and RSI oracles.
 
 Each Smart Contract Managed Rebalancing Set system is made of three distinct parts: 1) Manager Contract that generates rebalancing proposals based off on-chain data, 2) Oracles that are used to provide data to the Manager Contract and, 3) the Rebalancing Set Token that stores state (balances, allocations, etc.) regarding the strategy.
+
+Currently, HistoricalPriceFeeds use data from Maker’s oracles to build a price history for the underlying asset, but any oracle adhering to Maker's interface could be used. The HistoricalPriceFeed is intended to represent the historical prices of one asset at consistent time intervals. Additionally, there is a defined upper limit to the amount of historical data, after which old data is overwritten.
+
+The MovingAverageOracle leverages data available from the HistoricalPriceFeed to calculate a simple moving average of a desired amount of data points.
+
+
+### Contract Addresses
+- HistoricalPriceFeed: [0x7956cE4fbA992987A11bd44ff0Ddb62504711Be8](https://etherscan.io/address/0x7956cE4fbA992987A11bd44ff0Ddb62504711Be8)
+- HistoricalPriceFeed medianizerAddress: [0x729D19f657BD0614b4985Cf1D82531c67569197B](https://etherscan.io/address/0x729D19f657BD0614b4985Cf1D82531c67569197B)
+- MovingAverageOracle: [0x90b242eDd278E636E02C2054C861Fd46A7B96271](https://etherscan.io/address/0x90b242eDd278E636E02C2054C861Fd46A7B96271)
+- HistoricalPriceFeed priceFeedAddress: [0x7956cE4fbA992987A11bd44ff0Ddb62504711Be8](https://etherscan.io/address/0x7956cE4fbA992987A11bd44ff0Ddb62504711Be8)
 
 ### Source
 - https://www.tokensets.com/
