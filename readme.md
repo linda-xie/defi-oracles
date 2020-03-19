@@ -1,9 +1,9 @@
 # defi-oracles
 
-> A curated list of oracle methods used in decentralized finance (DeFi) projects.
+> A curated list of oracle methods and contract addresses used in decentralized finance (DeFi) projects.
 
 
-## Contents
+## Table of Contents
 - [Aave](#Aave)
 - [Augur](#Augur)
 - [bZx](#bZx)
@@ -15,6 +15,8 @@
 - [Nuo](#Nuo)
 - [Synthetix](#Synthetix)
 - [Token Sets](#Token-Sets)
+- [Additional Resources](#Additional-Resources)
+- [Contribute](#Contribute)
 
 
 ## Aave
@@ -225,7 +227,7 @@ The MovingAverageOracle leverages data available from the HistoricalPriceFeed to
 
 - [What are Oracles?](https://docs.ethhub.io/built-on-ethereum/oracles/what-are-oracles/) by EthHub
 - [What is an oracle? How smart contracts see the world](https://defipulse.com/blog/what-is-an-oracle-how-smart-contracts-see-the-world/) by DeFi Pulse
-- [Decentralised Oracles: a comprehensive overview](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841)
+- [Decentralised Oracles: a comprehensive overview](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841) by Julien Thevenard
 
 
 ## Contribute
