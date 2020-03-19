@@ -27,7 +27,7 @@ On-chain prices are calculated by having each independent node retrieve data fro
 
 ### Source
 - https://medium.com/aave/the-aave-oracle-network-powered-by-chainlink-is-now-live-45bb8a5a8c4e
-- https://feeds.chain.link/
+- https://feeds.chain.link
 
 ## Augur
 ### Oracle Method
@@ -40,7 +40,7 @@ In v2, if you stake REP in favor of an outcome that the market ends up resolving
 With each successive dispute round, a higher Dispute Bond is needed to shift the Tentative Winning Outcome. A user may contribute the full Dispute Bond or fill it partially as part of a crowd-sourced fill along with other users.
 
 ### Source
-- https://www.augur.net/blog/v2-resolution/
+- https://www.augur.net/blog/v2-resolution
 
 ## bZx
 ### Oracle Method
@@ -52,7 +52,7 @@ On-chain prices are calculated by having each independent node retrieve data fro
 
 ### Source
 - https://bzx.network/blog/chainlink-oracles
-- https://feeds.chain.link/
+- https://feeds.chain.link
 
 ## Compound
 ### Oracle Method
@@ -82,7 +82,7 @@ There are sanity bounds placed on the price of DAI, currently set to 0.95 and 1.
 ### Source
 - https://medium.com/hydro-protocol/ddex-faq-margin-trading-bd4b32beb9f
 - https://medium.com/ddex/reflecting-on-ddex-in-the-age-of-flash-loans-ee55410e0974
-- https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit/
+- https://samczsun.com/taking-undercollateralized-loans-for-fun-and-for-profit
 
 ## dYdX
 ### Oracle Method
@@ -112,7 +112,7 @@ Currently the addresses are:
 
 ## MakerDAO
 ### Oracle Method
-The reference price (ETHUSD) for the Maker system is provided via an oracle (the medianizer), which collates price data from a number of external price feeds. https://makerdao.com/en/feeds/
+The reference price (ETHUSD) for the Maker system is provided via an oracle (the medianizer), which collates price data from a number of external price feeds.
 
 Independent price feed operators constantly monitor the reference price across a number of external sources and will submit updates to the blockchain when:
 
@@ -141,8 +141,8 @@ v2 introduces several new proposals:
 - Basic Attention Token: [0xB4eb54AF9Cc7882DF0121d26c5b97E802915ABe6](https://etherscan.io/address/0xB4eb54AF9Cc7882DF0121d26c5b97E802915ABe6)
 
 ### Source
-- https://developer.makerdao.com/feeds/
-- https://blog.makerdao.com/introducing-oracles-v2-and-defi-feeds/
+- https://developer.makerdao.com/feeds
+- https://blog.makerdao.com/introducing-oracles-v2-and-defi-feeds
 
 ## Nexus Mutual
 ### Oracle Method
@@ -179,7 +179,7 @@ At any point in time, if the above condition does not hold true, the exchange ma
 There are plans to potentially integrate Chainlink in a future version.
 
 ### Source
-- https://nuo.drift.help/article/how-does-nuo's-price-feed-work/
+- https://nuo.drift.help/article/how-does-nuo's-price-feed-work
 - https://twitter.com/getnuo/status/1230221716934340608
 
 ## Synthetix
@@ -194,7 +194,7 @@ The ExchangeRates contract (https://contracts.synthetix.io/ExchangeRates) will c
 - ExchangeRates: [0x9D7F70AF5DF5D5CC79780032d47a34615D1F1d77](https://etherscan.io/address/0x9D7F70AF5DF5D5CC79780032d47a34615D1F1d77)
 
 ### Source
-- https://blog.synthetix.io/chainlink-decentralizes-first-wave-of-synthetix-price-feeds/
+- https://blog.synthetix.io/chainlink-decentralizes-first-wave-of-synthetix-price-feeds
 - https://www.synthetix.io/uploads/synthetix_litepaper.pdf
 - https://sips.synthetix.io/sips/sip-36
 - https://sips.synthetix.io/sips/sip-32
@@ -217,9 +217,16 @@ The MovingAverageOracle leverages data available from the HistoricalPriceFeed to
 - HistoricalPriceFeed priceFeedAddress: [0x7956cE4fbA992987A11bd44ff0Ddb62504711Be8](https://etherscan.io/address/0x7956cE4fbA992987A11bd44ff0Ddb62504711Be8)
 
 ### Source
-- https://www.tokensets.com/
+- https://www.tokensets.com
 - https://medium.com/set-protocol/introducing-the-link-rsi-set-on-tokensets-fe3b4fcacf94
 - https://github.com/SetProtocol/set-protocol-strategies/wiki
+
+## Additional Resources
+
+- [What are Oracles?](https://docs.ethhub.io/built-on-ethereum/oracles/what-are-oracles/) by EthHub
+- [What is an oracle? How smart contracts see the world](https://defipulse.com/blog/what-is-an-oracle-how-smart-contracts-see-the-world/) by DeFi Pulse
+- [Decentralised Oracles: a comprehensive overview](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841)
+
 
 ## Contribute
 
